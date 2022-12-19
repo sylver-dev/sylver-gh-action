@@ -1,0 +1,6 @@
+name: 'Sylver check'
+description: 'Check the source code of you repository and upload the analysis results to your dashboard.'
+inputs:
+  token:
+    description: 'Sylver token for the current repository'
+    required: true  
