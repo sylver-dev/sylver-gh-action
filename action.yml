@@ -7,3 +7,6 @@ inputs:
   token:
     description: 'Sylver token for the current repository'
     required: true  
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
