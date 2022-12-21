@@ -1,7 +1,8 @@
-from alpine:3.10
+from ubuntu:latest
 
 COPY run.sh /run.sh
 
-RUN apk add --no-cache bash git curl
+RUN apt-get update && apt-get install -y \
+    bash git curl xz-utils
 
 ENTRYPOINT ["/run.sh"]
